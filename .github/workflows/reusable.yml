@@ -15,5 +15,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: ${{ inputs.artifact-name }}
+      - name: List Files
+        run: ls -ll
       - name: Deploying Project
         run: echo "Deploying project code"
